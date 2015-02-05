@@ -26,13 +26,38 @@ body {
 }
 
 .logo { 
-    position: relative;
     width: 100px;
     top: 20px;
-    animation-duration: 2s;
-    animation-duration: 2s;
-    animation-name: bounceIn;
-    animation-name: bounceIn;
+    width: 150px;
+    height: 150px;
+    top: 200px;
+    left: 200px;
+    -webkit-animation: logo-rotate 2s ease-in-out infinite alternate;
+    animation: box-rotate 8s ease-in-out infinite alternate;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes logo-rotate {
+    
+    0%{
+     -webkit-transform: rotate(0deg);
+    }
+    
+    100%{
+    -webkit-transform: rotate(360deg);
+    }
+}
+  
+@keyframes box-rotate {
+    
+    0%{
+     transform: rotate(0deg);
+    }
+    
+    100%{
+    transform: rotate(360deg);
+    }
 }
 
 .button {
