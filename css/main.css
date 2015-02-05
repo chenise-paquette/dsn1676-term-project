@@ -29,6 +29,10 @@ body {
     position: relative;
     width: 100px;
     top: 20px;
+    animation-duration: 2s;
+    animation-duration: 2s;
+    animation-name: bounceIn;
+    animation-name: bounceIn;
 }
 
 .button {
