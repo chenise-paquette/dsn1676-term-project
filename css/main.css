@@ -21,10 +21,27 @@ body {
     margin: 0 auto;
 }
 
+.whitetype{
+    color: white;
+}
+
 .logo { 
     position: relative;
     width: 100px;
     top: 20px;
 }
 
+.button {
+    height: 50px;
+    width: 80px;
+    padding: .75em;
+    position: relative;
+    bottom: 20px;
+}
 
+.background {
+    background-color:black;
+    text-align: center;
+    overflow: hidden; 
+}    
+    
