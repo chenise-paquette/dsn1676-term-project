@@ -25,6 +25,12 @@ body {
     color: white;
 }
 
+.background {
+    background-color:black;
+    text-align: center;
+    overflow: hidden; 
+}
+
 .logo { 
     width: 100px;
     top: 20px;
@@ -66,11 +72,32 @@ body {
     padding: .75em;
     position: relative;
     bottom: 20px;
+    -webkit-animation: fly 3s ease forwards infinite;
+    animation: fly 3s ease forwards infinite;
+    -webkit-transform-origin: center;
+    transform-origin: center;
 }
 
-.background {
-    background-color:black;
-    text-align: center;
-    overflow: hidden; 
-}    
+@-webkit-keyframes fly {
     
+    0%{
+     -webkit-transform: translateY(100px);
+    
+    }
+    50%{
+    -webkit-transform: translateY(200px);
+        
+}
+
+@keyframes fly {
+    
+    0%{
+     transform: translateY(100px);
+    }
+    
+    50%{
+        transform: translateY(200px);
+    }
+    
+}
+ 
