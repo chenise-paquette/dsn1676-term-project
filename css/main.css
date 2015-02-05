@@ -28,7 +28,8 @@ body {
 .background {
     background-color:black;
     text-align: center;
-    overflow: hidden; 
+    overflow: hidden;
+    height: 100vh;
 }
 
 h1:hover{
@@ -37,15 +38,27 @@ h1:hover{
     transform: scale(1.1);
 }
 
-.logo { 
-    width: 100px;
+.hamburger{
+    width: 80px;
+    position: relative;
+    padding: 5px;
+    height: 50px;
+    float:right;
+}
+
+.hamburger:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 110px;
     top: 20px;
-    width: 150px;
     height: 150px;
     top: 200px;
-    left: 200px;
-    -webkit-animation: logo-rotate 2s ease-in-out infinite alternate;
-    animation: box-rotate 8s ease-in-out infinite alternate;
+    -webkit-animation: logo-rotate 2s ease-in-out alternate;
+    animation: logo-rotate 8s ease-in-out alternate;
     -webkit-transform-origin: center;
     transform-origin: center;
 }
