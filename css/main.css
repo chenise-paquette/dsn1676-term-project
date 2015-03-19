@@ -95,22 +95,17 @@ h1:hover{
 .section-title {
     text-align: center;
     color: black; 
-    font-weight: 700;
     position: relative;
     top: 1em;
 }
 
 .title {
-    font-size: 16px;
+    font-size: 15px;
     top: .5em;
     left: 1em;
     color: black; 
     font-weight: 300;
     text-align: center;
-}
-
-.box {
-    overflow: hidden;
 }
 
 .name{
@@ -186,16 +181,46 @@ a:hover {
     padding: .75em;
     position: relative;
     bottom: 10px;
-    -webkit-animation: fly 3s ease forwards infinite;
-    animation: fly 3s ease forwards infinite;
-    -webkit-transform-origin: center;
-    transform-origin: center;
     height: 100px;
     top: calc(50% - 50px);
     width: 100px;
     border-radius: 50%;
+    left:10px;
+    height: 100px;
+    top: calc(50% - 50px);
+    width: 100px;
 }
 
+.js-button-bounce{
+    animation: btn-bounce 1s linear;
+}
+    
+@keyframes btn-bounce {
+    0% {
+        top: calc(50% - 40px);
+        right: 1em;
+    }
+    25%{
+       top: calc(50% - 50px);
+       right: 2em;
+    }
+    50%{
+        top: calc(50% - 40px);
+        right: 3em;
+    }
+     75%{
+        top: calc(50% - 50px);
+        right: 4em;
+    }
+    90%{
+        top: calc(50% - 40px);
+        right: 5em;
+    }
+    100%{
+        top: calc(50% - 40px);
+        right: 6em;
+    }
+}
 
 
 @-webkit-keyframes appear {
