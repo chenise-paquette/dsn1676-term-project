@@ -39,19 +39,55 @@ h1:hover{
     
 }
 
-.hamburger{
-    position: absolute;
-    width: 80px;
-    position: relative;
-    padding: 5px;
-    height: 50px;
-    float:right;
+
+.nav {
+    overflow: hidden;
+    background-color: black;
+    height: 7em;
 }
 
-.hamburger:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+.nav-logo {
+    height: 5em;
+    position: absolute;
+    top: .25em;
+    left: 2em;
+}
+
+.nav-list {
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.menu-btn {
+    position: absolute;
+    height: 2em;
+    right: 2em;
+    top: 2.5em;
+    cursor: pointer;
+} 
+
+.full-list {
+    height: 0;
+    -webkit-transition: height 1s ease;
+    transition: height 1s ease;
+    overflow: hidden;
+    background-color: black; 
+}
+
+.first-list:hover {
+    font-weight: 500;
+    color: #efe3d3; 
+    cursor: pointer;
+    -webkit-transition: 1s;
+    transition: 1s; 
+}
+
+.js-menu-open {
+    height:  10em;
+    display: block;
+    background-color: black;   
 }
 
 .logo {
@@ -63,6 +99,57 @@ h1:hover{
     animation: logo-rotate 8s ease-in-out alternate;
     -webkit-transform-origin: center;
     transform-origin: center;
+    width: 100px;
+    position: relative;
+    top: 20px;
+    -webkit-animation: appear 2s;
+    animation: appear 2s ease;
+}
+
+.button {
+    height: 50px;
+    width: 80px;
+    padding: .75em;
+    position: relative;
+    bottom: 20px;
+    -webkit-animation: fly 3s ease forwards infinite;
+    animation: fly 3s ease forwards infinite;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    
+}
+
+
+@-webkit-keyframes appear {
+    0% {
+        -webkit-transform: scale(0.1);
+        opacity: 0;
+    }
+    
+    60% {
+        -webkit-transform: scale(1.2);
+        opacity: .5;
+    }
+    
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes appear {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    
+    60% {
+        transform: scale(1.2);
+        opacity: .5;
+    }
+    
+    100% {
+        transform: scale(1);
+    }
 }
 
 @-webkit-keyframes logo-rotate {
@@ -85,18 +172,6 @@ h1:hover{
     100%{
     transform: rotate(360deg);
     }
-}
-
-.button {
-    height: 50px;
-    width: 80px;
-    padding: .75em;
-    position: relative;
-    bottom: 20px;
-    -webkit-animation: fly 3s ease forwards infinite;
-    animation: fly 3s ease forwards infinite;
-    -webkit-transform-origin: center;
-    transform-origin: center;
 }
 
 @-webkit-keyframes fly {
