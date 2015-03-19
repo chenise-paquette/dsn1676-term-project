@@ -2,13 +2,12 @@
 var $menuBtn = $('.menu-btn');
 var $fullList = $('.full-list');
 
+var $tabs = $('.tabs');
+var $panel = $('.panel');
+
 $menuBtn.on('click', function () {
     $fullList.toggleClass('js-menu-open');
 });
-    
-    
-var $tabs = $('.tabs');
-var $panel = $('.panel');
     
 $tabs.on('click', 'a', function (e) {
     e.preventDefault();
@@ -21,3 +20,4 @@ $tabs.on('click', 'a', function (e) {
     $(this).addClass('js-current');
     
 });
+

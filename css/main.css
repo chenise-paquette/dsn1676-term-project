@@ -30,6 +30,7 @@ body {
     text-align: center;
     overflow: hidden;
     height: 100vh;
+    height: 40em;
 }
 
 h1:hover{
@@ -52,10 +53,13 @@ h1:hover{
 }
 
 .nav-list {
+    top: 5em;
+    left: 5em;
     list-style-type: none;
     text-align: center;
     color: white;
     overflow: hidden;
+    float:left;
 }
 
 .menu-btn {
@@ -88,28 +92,6 @@ h1:hover{
     background-color: black;   
 }
 
-.full-list {
-    height: 0;
-    -webkit-transition: height 1s ease;
-    transition: height 1s ease;
-    overflow: hidden;
-    background-color: black; 
-}
-
-.first-list:hover {
-    font-weight: 500;
-    color: grey; 
-    cursor: pointer;
-    -webkit-transition: 1s;
-    transition: 1s; 
-}
-
-.js-menu-open {
-    height: 8em;
-    display: block;
-    background-color: black;   
-}
-
 .section-title {
     text-align: center;
     color: black; 
@@ -119,18 +101,21 @@ h1:hover{
 }
 
 .title {
-    font-style: italic;
     font-size: 16px;
-    position: relative;
     top: .5em;
     left: 1em;
-    float: left;
     color: black; 
     font-weight: 300;
+    text-align: center;
 }
 
 .box {
     overflow: hidden;
+}
+
+.name{
+    text-decoration: none;
+    text-align: center;
 }
 
 a {
@@ -196,16 +181,21 @@ a:hover {
 }
 
 .button {
-    height: 50px;
+    height: 10x;
     width: 80px;
     padding: .75em;
     position: relative;
-    bottom: 20px;
+    bottom: 10px;
     -webkit-animation: fly 3s ease forwards infinite;
     animation: fly 3s ease forwards infinite;
     -webkit-transform-origin: center;
     transform-origin: center;
+    height: 100px;
+    top: calc(50% - 50px);
+    width: 100px;
+    border-radius: 50%;
 }
+
 
 
 @-webkit-keyframes appear {
