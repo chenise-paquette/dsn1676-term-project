@@ -7,7 +7,10 @@ var $panel = $('.panel');
 
 var $btnBounce = $('.btn-bounce');
 var $button = $('.button');
- 
+
+var $navList = $('.nav-list');
+var $background = $('.background');
+
 $menuBtn.on('click', function () {
     $fullList.toggleClass('js-menu-open');
 });
@@ -32,4 +35,4 @@ $button.on('webkitAnimationEnd animationend', function () {
     $button.removeClass('js-button-bounce');
 });
 
-
+$navList.localScroll();
