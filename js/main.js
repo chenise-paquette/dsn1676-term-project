@@ -9,7 +9,8 @@ var $btnBounce = $('.btn-bounce');
 var $button = $('.button');
 
 var $navList = $('.nav-list');
-var $background = $('.background');
+var $scrolldown = $('.scrolldown');
+var $scrollup = $('.scrollup');
 
 $menuBtn.on('click', function () {
     $fullList.toggleClass('js-menu-open');
@@ -36,3 +37,5 @@ $button.on('webkitAnimationEnd animationend', function () {
 });
 
 $navList.localScroll();
+$scrolldown.localScroll();
+$scrollup.localScroll();
