@@ -194,6 +194,56 @@ a:hover {
 .js-button-bounce{
     animation: btn-bounce 1s linear;
 }
+
+.icons{
+    width: 200px
+}
+
+
+
+
+
+
+
+#ears {
+     transform: translateY(20px);
+     transition: a;; 200ms ease;
+}
+
+#bear:hover #ears {
+    transform: translateX(0);
+   
+}
+
+#nose {
+    animation: nose-twitch 1s linear infinite;
+}
+
+@keyframes nose-twitch {
+ 0% {
+     transform: translateX(0);
+ }
+30% {
+     transform: translateX(20px);
+ }
+70% {
+     transform: translateX(-20px);
+ }
+100% {
+     transform: translateX(0px);
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
     
 @keyframes btn-bounce {
     0% {
