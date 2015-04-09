@@ -198,9 +198,10 @@ a:hover {
 .icons{
     width: 300px;
     top: 50px;
-    position: relative;
     overflow: visible;
-    right: 100px;
+    position: relative;
+    text-align: center;
+    left:520px;
 }
 
 #icons {
