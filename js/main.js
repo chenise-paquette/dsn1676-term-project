@@ -39,3 +39,9 @@ $button.on('webkitAnimationEnd animationend', function () {
 $navList.localScroll();
 $scrolldown.localScroll();
 $scrollup.localScroll();
+
+var $iconsSection = $(".icons");
+
+$iconsSection.waypoint(function () {
+    $iconsSection.toggleClass('js-active');
+}, {offset: '20%' });

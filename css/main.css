@@ -197,19 +197,34 @@ a:hover {
 
 .icons{
     width: 300px;
-    top: 50px;
-    position: relative;
-     text-align: center;
+    top: 70px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #icons {
     overflow: visible;
 }
 
+.js-active #camera{
+    -webkit-animation: twitch 1s linear;
+    animation: twitch 1s linear;
+}
+
+.js-active #feather{
+    -webkit-animation: bump 1s linear;
+    animation: bump-up 1s linear;
+}
+
+.js-active #pencil{
+     -webkit-animation: bump 1s linear;
+     animation: bump-up 1s linear;
+}
+
 #icons:hover #camera {
     -webkit-animation: twitch 1s linear;
     animation: twitch 1s linear;
-   
 }
 
 #icons:hover #feather {
