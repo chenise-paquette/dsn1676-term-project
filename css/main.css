@@ -198,10 +198,8 @@ a:hover {
 .icons{
     width: 300px;
     top: 50px;
-    overflow: visible;
     position: relative;
-    text-align: center;
-    left:520px;
+     text-align: center;
 }
 
 #icons {
@@ -209,16 +207,34 @@ a:hover {
 }
 
 #icons:hover #camera {
+    -webkit-animation: twitch 1s linear;
     animation: twitch 1s linear;
    
 }
 
 #icons:hover #feather {
+    -webkit-animation: bump-up 1s linear;
     animation: bump-up 1s linear;
 }
 
 #icons:hover #pencil {
+    -webkit-animation: bump-up 1s linear;
     animation: bump-up 1s linear;
+}
+
+@-webkit-keyframes twitch {
+ 0% {
+     transform: translateX(0);
+ }
+30% {
+     transform: translateY(15px);
+ }
+70% {
+     transform: translateX(0);
+ }
+100% {
+     transform: translateY(15px);
+ }
 }
 
 @keyframes twitch {
@@ -233,6 +249,21 @@ a:hover {
  }
 100% {
      transform: translateY(15px);
+ }
+}
+
+@-webkit-keyframes bump-up {
+ 0% {
+     transform: translateX(15px)
+ }
+30% {
+     transform: translateY(0px);
+ }
+70% {
+     transform: translateX(15px);
+ }
+100% {
+     transform: translateY(0px);
  }
 }
 
