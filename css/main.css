@@ -23,7 +23,7 @@ body {
 
 .skip-links{
     margin: 0;
-    padding 0;
+    padding: 0;
     list-style-type: none;
 } 
     
@@ -135,8 +135,7 @@ h1:hover{
 .name{
     text-decoration: none;
     text-align: center;
-    width: 400px;
-    height: auto;
+    padding: 50px 50px 50px 50px;
 }
 
 a {
@@ -206,7 +205,6 @@ a:hover {
 }
 
 .button {
-    height: 10x;
     width: 80px;
     padding: .75em;
     position: relative;
@@ -431,4 +429,3 @@ a:hover {
     }
     
 }
- 
